@@ -6,7 +6,7 @@
 <body>
 <script>
 var xhr =new XMLHttpRequest()
-xhr.open('GET','/mock/data.json',true)
+xhr.open('GET','/json/data.json',true)
 xhr.onload= function(){
 console.log(JSON.parse(xhr.responseText))
 }
