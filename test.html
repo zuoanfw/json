@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<script>
+var xhr =new XMLHttpRequest()
+xhr.open('GET','/mock/data.json',true)
+xhr.onload= function(){
+console.log(JSON.parse(xhr.responseText))
+}
+xhr.send()
+</script>
+</body>
+</html>
